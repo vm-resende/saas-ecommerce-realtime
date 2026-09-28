@@ -1,0 +1,36 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "dev": "tsx watch src/server.ts"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "dependencies": {
+    "@fastify/cors": "^11.3.0",
+    "@fastify/jwt": "^10.2.2",
+    "@fastify/websocket": "^11.3.1",
+    "bcryptjs": "^3.0.3",
+    "bullmq": "^6.3.9",
+    "dotenv": "^18.0.4",
+    "drizzle-orm": "^0.45.3",
+    "fastify": "^5.12.5",
+    "ioredis": "^6.0.0",
+    "pg": "^8.23.0",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/node": "^26.6.3",
+    "@types/pg": "^8.23.1",
+    "@types/ws": "^8.18.1",
+    "drizzle-kit": "^0.31.11",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
